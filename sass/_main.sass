@@ -1,3 +1,8 @@
+#particles-js
+  height: 100vh
+  background-color: #232741
+  position: relative
+  
 .ss
   &-system
     position: absolute
@@ -20,7 +25,7 @@
       left: 50%
       top: 50%
       transform: translate(-50%, -50%)
-      box-shadow: 0px 0px 35px 4px white;
+      box-shadow: 0px 0px 35px 4px white
   &-content
     width: 150px
     height: 150px
@@ -37,7 +42,7 @@
     float: left
     display: inline
     border-radius: 80px
-    animation: time 10s infinite linear;
+    animation: time 10s infinite linear
     &:before
       background-image: url('../img/ss/planet-earth.svg')
       background-size: 24px 24px
@@ -51,14 +56,14 @@
     margin: -237px auto 0 62px
     float: left
     border-radius: 100px
-    animation: time 10s infinite linear;
+    animation: time 10s infinite linear
   &-moonrev
     width: 60px
     height: 60px
     float: left
     margin: 3px 3px
     border-radius: 55px
-    animation: time 4s infinite linear;
+    animation: time 4s infinite linear
     &:before
       background-image: url('../img/ss/moon.svg')
       background-size: 7px 7px
@@ -66,7 +71,26 @@
       width: 7px
       height: 7px
       content: ''
-
-@keyframes time
-  to
-    transform: rotate(360deg)
+.main
+  &-arrow
+    width: 30px
+    height: 50px
+    border: 1px solid #fff
+    border-radius: 15px
+    position: relative
+    &::before
+      content: ''
+      width: 8px
+      height: 8px
+      background-color: #fff
+      position: absolute
+      top: 8px
+      left: 50%
+      transform: translateX(-50%)
+      border-radius: 50%
+      animation: main-arrow 2s infinite
+    &_wrap
+      position: absolute
+      bottom: 20px
+      left: 50%
+      transform: translateX(-50%)

@@ -2,16 +2,71 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-#particles-js {
-  height: 100vh;
-  background-color: #232741;
-  position: relative;
+@-webkit-keyframes time {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes time {
+  to {
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes time {
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes main-arrow {
+  from {
+    top: 8px;
+  }
+
+  to {
+    top: 35px;
+    opacity: 0;
+  }
+}
+
+@-o-keyframes main-arrow {
+  from {
+    top: 8px;
+  }
+
+  to {
+    top: 35px;
+    opacity: 0;
+  }
+}
+
+@keyframes main-arrow {
+  from {
+    top: 8px;
+  }
+
+  to {
+    top: 35px;
+    opacity: 0;
+  }
 }
 
 .container {
   width: 89%;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+#particles-js {
+  height: 100vh;
+  background-color: #232741;
+  position: relative;
 }
 
 .ss-system {
@@ -114,24 +169,38 @@ body {
   content: '';
 }
 
-@-webkit-keyframes time {
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+.main-arrow {
+  width: 30px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  position: relative;
 }
 
-@-o-keyframes time {
-  to {
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+.main-arrow::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 50%;
+  -webkit-animation: main-arrow 2s infinite;
+  -o-animation: main-arrow 2s infinite;
+  animation: main-arrow 2s infinite;
 }
 
-@keyframes time {
-  to {
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+.main-arrow_wrap {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
