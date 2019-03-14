@@ -63,6 +63,49 @@ body {
   margin: 0 auto;
 }
 
+.acc {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.acc-panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  -o-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.acc:after {
+  content: '\002B';
+  font-size: 1.2em;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.acc-active:after {
+  content: "\2212";
+  font-size: 1.2em;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
 #particles-js {
   height: 100vh;
   background-color: #232741;

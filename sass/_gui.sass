@@ -2,3 +2,32 @@
   width: 89%
   max-width: 1000px
   margin: 0 auto
+
+.acc
+  background-color: #eee
+  color: #444
+  cursor: pointer
+  padding: 18px
+  width: 50%
+  text-align: left
+  border: none
+  outline: none
+  transition: all 0.4s ease
+  &-panel
+    padding: 0 18px
+    background-color: white
+    max-height: 0
+    overflow: hidden
+    transition: max-height 0.2s ease-out
+  &:after
+    content: '\002B' // + for accordion
+    font-size: 1.2em
+    color: #777
+    float: right
+    margin-left: 5px
+    transition: all 0.4s ease
+  &-active
+    &:after
+      content: "\2212" // - unicode
+      font-size: 1.2em
+      transition: all 0.4s ease
