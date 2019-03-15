@@ -117,9 +117,6 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-}
-
-.header-nav {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -131,14 +128,74 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  margin: 0 auto;
   color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header h1,
+.header h2 {
+  padding: 0;
+  margin: 0;
 }
 
 .header-title {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   color: #fff;
   font-size: 2em;
   text-align: center;
   font-family: 'Acme', sans-serif;
+}
+
+.header-logo {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+}
+
+.header-lang {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+}
+
+.header-lang__link {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0px 10px 0px 10px;
+  position: relative;
+}
+
+.header-lang__link::before {
+  content: '';
+  bottom: -2px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.header-lang__link:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .ss-system {
