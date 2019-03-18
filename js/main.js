@@ -22,12 +22,22 @@ jQuery(document).ready(function () {
     });
   }
 
-});
-
-// Smooth scrolling
-$('a').click(function () {
+  // Smooth scrolling
+  $('a').click(function () {
   $('html, body').animate({
       scrollTop: $($(this).attr('href')).offset().top
   }, 1500);
   return false;
+  });
+
+  //Slick sliders
+  $('.sl-slider_1').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  arrows: false
+  });
+
 });

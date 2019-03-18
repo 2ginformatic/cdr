@@ -6,19 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="css/slick.min.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="css/style.min.css">
+
+  <style>
+    .slider-container {
+      overflow: hidden;
+    }
+
+    .slick-slide:nth-of-child(n+1) {
+      display: none;
+    }
+
+    .slick-initialized,
+    .slick-slide:first-child {
+      display: block;
+    }
+  </style>
 
   <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" defer></script>
-  <script src="js/slick.min.js" defer></script>
+  <script src="slick/slick.min.js" defer></script>
   <script src="js/main.js" defer></script>
 
 
@@ -62,11 +79,26 @@
     <div class="container">
       <div class="section-wrapper">
         <div class="section-info">
-          <div class="section-info_title"></div>
-          <div class="section-info_text"></div>
+          <h2 class="section-info__title">test</h2>
+          <div class="section-info__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+            Eveniet saepe praesentium minima excepturi, dolores laudantium omnis minus rerum officiis ratione autem veniam, quia quae libero quam ipsa suscipit dicta et? <br>
+            Possimus harum vel similique consequuntur, velit accusamus non dignissimos totam iusto. 
+            Illo aliquam praesentium possimus nobis incidunt beatae quas veritatis repudiandae? 
+            Quos, doloremque totam!
+            Voluptatem perspiciatis culpa facere quam hic ut exercitationem beatae! <br>
+            Suscipit nobis tempora harum placeat odio eligendi incidunt reprehenderit dolorum sit maxime voluptas ab quas, fugit iure corporis repellendus id voluptatum voluptatibus exercitationem vero, laboriosam pariatur molestiae impedit dolore. <br>
+            Impedit, cumque laboriosam quia tempore fugiat aspernatur vel delectus debitis dignissimos perferendis cum eius optio ex culpa! Possimus eveniet, consectetur eius sapiente fugiat accusamus nam reprehenderit ipsum tenetur?<br></div>
+          <button class="acc">More info...</button>
+          <div class="acc-panel">
+            <p>Lorem ipsum...</p>
+          </div>
         </div>
-        <div class="section-photo">
-          <div class="slaider"></div>
+        <div class="section-media">
+          <div class="sl-slider_1">
+            <div><img src="img/adrianna-van-groningen-1440543-unsplash.jpg" alt=""></div>
+            <div><img src="img/dog-2029214_1920.jpg" alt=""></div>
+            <div><img src="img/pablo-soriano-1439421-unsplash.jpg" alt=""></div>
+          </div>
         </div>
       </div>
     </div>
