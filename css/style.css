@@ -85,10 +85,6 @@ body {
   border-radius: 8px;
 }
 
-.fancybox-toolbar {
-  display: none;
-}
-
 .acc {
   background-color: #fff;
   color: #515C6F;
@@ -408,7 +404,7 @@ body {
 
 .main-arrow_wrap {
   position: absolute;
-  bottom: 40px;
+  bottom: 55px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -485,7 +481,8 @@ body {
 }
 
 .section-media img {
-  max-width: 400px;
+  max-width: 350px;
+  width: 100%;
   border-radius: 8px;
 }
 
@@ -495,6 +492,7 @@ body {
 
 .sl-slider img {
   width: 100%;
+  max-width: 350px;
   height: 100%;
 }
 
