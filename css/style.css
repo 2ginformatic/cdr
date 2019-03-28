@@ -98,6 +98,7 @@ body {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  outline: none;
 }
 
 .acc-panel {
@@ -198,6 +199,7 @@ body {
   color: #ffffff;
   margin: 0px 10px 0px 10px;
   position: relative;
+  outline: none;
 }
 
 .header-lang__link::before {
