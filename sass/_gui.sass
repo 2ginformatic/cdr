@@ -6,6 +6,14 @@
 .noselect
   user-select: none
 
+.shadow-element
+  box-shadow: 0px 10px 30px rgba(114,124,142,0.83)
+
+.slick-list, .slick-slide, .slick-slide:focus
+  outline: none !important
+.slick-slider
+  border-radius: 8px
+
 .acc
   background-color: #fff
   color: $text-color
@@ -24,6 +32,7 @@
   align-items: center
   justify-content: space-between
   outline: none
+  font-weight: 700px
   &-panel
     color: $text-color
     padding: 0px 10px
@@ -31,6 +40,8 @@
     max-height: 0
     overflow: hidden
     transition: max-height 0.2s ease-out
+    font-size: 1.1em
+    line-height: 22px;
   &:after
     content: '\002B' // + for accordion
     font-size: 1.2em
