@@ -31,13 +31,14 @@ jQuery(document).ready(function () {
   });
 
   //Slick sliders
-  $('.sl-slider_1').slick({
+  $('.sl-slider').slick({
   dots: true,
   infinite: true,
   speed: 500,
   autoplay: true,
   autoplaySpeed: 3000,
-  arrows: false
+  arrows: false,
+  adaptiveHeight: true
   });
 
 });
