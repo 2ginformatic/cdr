@@ -23,7 +23,7 @@ jQuery(document).ready(function () {
   }
 
   // Smooth scrolling
-  $('a').click(function () {
+  $('#smooth-crool').click(function () {
   $('html, body').animate({
       scrollTop: $($(this).attr('href')).offset().top
   }, 1500);
@@ -39,6 +39,11 @@ jQuery(document).ready(function () {
   autoplaySpeed: 3000,
   arrows: false,
   adaptiveHeight: true
+  });
+
+  // fancyBox options
+  $('[data-fancybox="gallery"]').fancybox({
+    loop: true
   });
 
 });
