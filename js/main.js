@@ -3,8 +3,8 @@
 //   }
 // setInterval()
 // preloader();
-
-setInterval(function(){ $( "#preloader" ).css('opacity', 0); }, 5000);
+$("body").addClass("prel");
+setInterval(function(){ $( "#preloader" ).css('opacity', 0); $("body").removeClass("prel"); }, 5000);
 setInterval(function(){ $( "#preloader" ).remove() }, 5800);
 
 // Particle JS
