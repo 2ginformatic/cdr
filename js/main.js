@@ -1,3 +1,12 @@
+// function preloader() {
+//   $( "#preloader" ).remove();
+//   }
+// setInterval()
+// preloader();
+
+setInterval(function(){ $( "#preloader" ).css('opacity', 0); }, 5000);
+setInterval(function(){ $( "#preloader" ).remove() }, 5800);
+
 // Particle JS
 jQuery(document).ready(function () {
 
