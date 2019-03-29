@@ -30,13 +30,13 @@ jQuery(document).ready(function () {
   return false;
   });
 
-  //Slick sliders
+  // Slick sliders
   $('.sl-slider').slick({
   dots: true,
   infinite: true,
   speed: 500,
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 10000,
   arrows: false,
   adaptiveHeight: true
   });
@@ -44,6 +44,14 @@ jQuery(document).ready(function () {
   // fancyBox options
   $('[data-fancybox="gallery"]').fancybox({
     loop: true
+  });
+
+  // TwentyTwenty
+  $(function(){
+    $("#bef_1").twentytwenty({
+      no_overlay: true, //Do not show the overlay with before and after
+      click_to_move: true // Allow a user to click (or tap) anywhere on the image to move the slider to that location.
+    });
   });
 
 });
