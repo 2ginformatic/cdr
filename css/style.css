@@ -247,7 +247,7 @@ body {
 .header-lang__link {
   text-decoration: none;
   color: #ffffff;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 5px 0px 5px;
   position: relative;
   outline: none;
 }
@@ -405,7 +405,7 @@ body {
 
 .main-arrow_wrap {
   position: absolute;
-  bottom: 55px;
+  bottom: 60px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
