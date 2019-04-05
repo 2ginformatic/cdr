@@ -149,6 +149,72 @@ body {
   transition: all 0.4s ease;
 }
 
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  z-index: 10;
+  background-color: #353c51;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.sidebar-text {
+  padding: 5px;
+  color: #fff;
+}
+
+.sidebar audio {
+  outline: none;
+  margin-top: 10px;
+}
+
+.sidebar:target {
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.close-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 11;
+  color: #fff;
+  font-size: 2.5em;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.close-btn:hover {
+  opacity: 0.7;
+}
+
 .g-mb_20 {
   margin-bottom: 20px;
 }
@@ -276,6 +342,77 @@ body {
   transform: scaleX(1);
 }
 
+.main-arrow {
+  width: 30px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  position: relative;
+  opacity: 0.7;
+}
+
+.main-arrow::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 50%;
+  -webkit-animation: main-arrow 1s infinite;
+  -o-animation: main-arrow 1s infinite;
+  animation: main-arrow 1s infinite;
+}
+
+.main-arrow_wrap {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.main-music_link {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 5;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+  border: 1.5px solid #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0.6;
+}
+
+.main-music_active {
+  color: #232741;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
 .ss-system {
   position: absolute;
   left: 50%;
@@ -374,43 +511,6 @@ body {
   width: 7px;
   height: 7px;
   content: '';
-}
-
-.main-arrow {
-  width: 30px;
-  height: 50px;
-  border: 1px solid #fff;
-  border-radius: 15px;
-  position: relative;
-  opacity: 0.7;
-}
-
-.main-arrow::before {
-  content: '';
-  width: 8px;
-  height: 8px;
-  background-color: #fff;
-  position: absolute;
-  top: 8px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  border-radius: 50%;
-  -webkit-animation: main-arrow 1s infinite;
-  -o-animation: main-arrow 1s infinite;
-  animation: main-arrow 1s infinite;
-}
-
-.main-arrow_wrap {
-  position: absolute;
-  bottom: 60px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
 }
 
 .section {
@@ -533,6 +633,10 @@ body {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+
+  .main-music_link {
+    display: none;
   }
 }
 

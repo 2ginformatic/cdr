@@ -1,0 +1,68 @@
+.ss
+  &-system
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+  &-wrap
+    width: 320px
+    height: 320px
+    margin: 0 auto
+    position: relative
+    &:before
+      background: white
+      border-radius: 50%
+      display: inline-block
+      width: 50px
+      height: 50px
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      box-shadow: 0px 0px 35px 4px white
+  &-content
+    width: 150px
+    height: 150px
+    margin: 75px
+    position: relative
+    float: left
+    display: inline
+    border-radius: 75px
+  &-earth
+    width: 155px
+    height: 155px
+    margin: -219px 81px
+    position: relative
+    float: left
+    display: inline
+    border-radius: 80px
+    animation: time 10s infinite linear
+    &:before
+      background-image: url('../img/ss/planet-earth.svg')
+      background-size: 24px 24px
+      display: inline-block
+      width: 24px
+      height: 24px
+      content: ''
+  &-moon
+    width: 195px
+    height: 195px
+    margin: -237px auto 0 62px
+    float: left
+    border-radius: 100px
+    animation: time 10s infinite linear
+  &-moonrev
+    width: 60px
+    height: 60px
+    float: left
+    margin: 3px 3px
+    border-radius: 55px
+    animation: time 4s infinite linear
+    &:before
+      background-image: url('../img/ss/moon.svg')
+      background-size: 7px 7px
+      display: inline-block
+      width: 7px
+      height: 7px
+      content: ''

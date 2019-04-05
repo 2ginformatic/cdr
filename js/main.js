@@ -55,3 +55,23 @@ jQuery(document).ready(function () {
   });
 
 });
+
+// Music btn
+$(function() {
+  let mus_btn = $(".main-music_link");
+  $(window).scroll(function() {
+      let scroll = $(window).scrollTop();
+
+      if (scroll >= 100) {
+          mus_btn.addClass("main-music_active");
+      } else {
+          mus_btn.removeClass("main-music_active");
+      }
+  });
+});
+
+// Music volume
+let mus_v1 = document.getElementById("music-vol1");
+let mus_v2 = document.getElementById("music-vol2");
+mus_v1.volume = 0.3;
+mus_v2.volume = 0.3;
