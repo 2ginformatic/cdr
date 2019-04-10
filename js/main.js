@@ -31,15 +31,19 @@ jQuery(document).ready(function () {
   });
 
   // Slick sliders
-  $('.sl-slider').slick({
-  dots: true,
-  infinite: true,
-  speed: 500,
-  autoplay: true,
-  autoplaySpeed: 10000,
-  arrows: false,
-  adaptiveHeight: true
-  });
+  function StartSlider() {
+    $('.sl-slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      autoplay: true,
+      autoplaySpeed: 10000,
+      arrows: false,
+      adaptiveHeight: true
+      });
+  }
+
+  setTimeout(StartSlider, 5000)
 
   // fancyBox options
   $('[data-fancybox="gallery"]').fancybox({
