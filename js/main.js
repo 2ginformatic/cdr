@@ -75,7 +75,7 @@ $(function() {
 });
 
 // Music volume
-let mus_v1 = document.getElementById("music-vol1");
-let mus_v2 = document.getElementById("music-vol2");
-mus_v1.volume = 0.3;
-mus_v2.volume = 0.3;
+// let mus_v1 = document.getElementById("music-vol1");
+// let mus_v2 = document.getElementById("music-vol2");
+// mus_v1.volume = 0.3;
+// mus_v2.volume = 0.3;
